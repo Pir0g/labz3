@@ -1,0 +1,11 @@
+<div>
+  <h1>Лабораторная работа 3</h1>
+  <nav>
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions] = "{exact:true}">На главную страницу </a>
+    <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions] = "{exact:true}">About </a>
+    <a [routerLink]="['contacts', 10]" routerLinkActive="active">Контакты </a>
+    <a routerLink="/parser" routerLinkActive="active">Парсер</a>
+  </nav>
+  <hr>
+  <router-outlet></router-outlet>
+</div>

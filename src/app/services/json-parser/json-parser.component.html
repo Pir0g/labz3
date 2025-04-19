@@ -1,0 +1,8 @@
+<div id="drop-area">
+    <form class="my-form">
+      <p>Перетащите файлы сюда или нажмите, чтобы выбрать</p>
+      <input type="file" id="fileElem" (change) = 'parse($event.target)'>
+      <label class="button" for="fileElem">Выбрать файл</label>
+    </form>
+    <div id="gallery"></div>
+  </div>
